@@ -1,0 +1,36 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+font-size: 30px;
+}
+
+
+.select_area{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+input{
+    border: 1px solid;
+}
+
+button{
+    width: 100px;
+    border-radius: 5px;
+    box-shadow:3px ;
+    
+}
+
+.button-area{
+    justify-content:center;
+    align-items: center;
+    margin-left: 250px;
+}
