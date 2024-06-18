@@ -1,6 +1,14 @@
 h1{
     display: flex;
+    justify-content: center; 
+      
+}
+
+form{
+    display: flex;
+    width: 100%;
     justify-content: center;
+    text-align: center;
 }
 
 label{
@@ -11,26 +19,38 @@ font-size: 30px;
 .select_area{
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 100%;
     justify-content: center;
     text-align: center;
     margin-top: 50px;
-    margin-left: 50px;
+    
 }
 
-input{
+select{
     border: 1px solid;
+    width: 300px;
+      
 }
 
 button{
-    width: 100px;
+    width: 200px;
     border-radius: 5px;
     box-shadow:3px ;
-    
+ 
+   
 }
+
 
 .button-area{
     justify-content:center;
     align-items: center;
-    margin-left: 250px;
+    
+}
+
+.button-area:hover{
+    background-color: black;
+    color: aliceblue;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }

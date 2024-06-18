@@ -21,9 +21,6 @@
 // echo "Data e Hora Atual: ". $date->format("d-m-y H:i:s");
 
 
-
-
-
 ?>
 
 
@@ -41,14 +38,28 @@
 
 <body>
 
-  <h1 class="titulo">Hora mundial</h1>
- 
-<div class="select_area" >
-  <label for="titulo">Digite uma cidade para saber a hora:</label>
-        <input type="text" id="titulo" name="titulo" required placeholder="Digite uma cidade" >
-        <button class="button-area" >Selecionar</button>
-    
-        </div>
+  <h1>Horário mundial:</h1>
+
+  <!-- //Sempre criar um formulario para usar no JS ou PHP -->
+
+  <form action="horarioLocal.php" method="POST">
+
+    <div class="select_area">
+      <label for="cidade">Digite uma cidade para saber a hora:</label>
+      <select name="cidade" id="cidade">
+        <!-- Colocar as opções de cidades para o usuario escolher -->
+        <option value="">Selecione uma opção</option>
+        <option value="Sao Paulo">Sao Paulo</option>
+        <option value="New York">New York</option>
+        <option value="London">Londres</option>
+      </select>
+      <button class="button-area" type="submit">Verificar hora local</button>
+    </div>
+
+  </form>
+
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -59,7 +70,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 </body>
 
 </html>
