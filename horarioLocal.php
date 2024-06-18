@@ -43,6 +43,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>Nenhum país selecionado.</p>
     <?php endif; ?>
 
-    <p><a href="index.html">Voltar</a></p>
+    <p><a href="index.php">Voltar</a></p>
 </body>
 </html>
